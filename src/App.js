@@ -40,7 +40,7 @@ function App() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-background-light to-background-light-blue">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-md z-50 shadow-lg transition-all duration-300">
+      <nav className="fixed top-0 w-full bg-white/20 backdrop-blur-md z-50 shadow-lg transition-all duration-300">
         <div className="container flex justify-between items-center h-16">
           <div className="text-2xl font-bold text-primary-dark font-serif">
             Nana Ekvtimishvili
@@ -73,18 +73,23 @@ function App() {
       {/* Hero Section */}
       <section
         id="home"
-        className="min-h-screen flex items-center gradient-bg-dark relative overflow-hidden"
+        className="min-h-screen flex items-center relative overflow-hidden"
       >
-        <div className="absolute inset-0 bg-black/20"></div>
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat blur-sm"
+          style={{
+            backgroundImage: "url('/images/Nana-by-Irma-Sharikadzeweb2.jpg')",
+          }}
+        ></div>
+        <div className="absolute inset-0 bg-black/50"></div>
         <div className="container grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
           <div className="flex justify-center lg:justify-start">
-            <div className="w-80 h-96 bg-white/20 backdrop-blur-md rounded-2xl border-2 border-white/30 shadow-2xl flex flex-col justify-center items-center">
-              <div className="text-3xl font-bold text-white text-center mb-4 drop-shadow-lg">
-                Nana Ekvtimishvili
-              </div>
-              <div className="text-xl text-white/90 text-center italic">
-                Film Director & Writer
-              </div>
+            <div className="w-80 h-96 rounded-2xl overflow-hidden shadow-2xl border-2 border-white/30">
+              <img
+                src="/images/nana-profile.jpg"
+                alt="Nana Ekvtimishvili"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
           <div className="text-white text-center lg:text-left">
@@ -157,8 +162,18 @@ function App() {
       </section>
 
       {/* Filmography Section */}
-      <section id="filmography" className="py-24 gradient-bg-purple text-white">
-        <div className="container">
+      <section
+        id="filmography"
+        className="py-24 text-gray-800 relative overflow-hidden"
+      >
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: "url('/images/girls.jpg')",
+          }}
+        ></div>
+        <div className="absolute inset-0 bg-gray-100/20"></div>
+        <div className="container relative z-10">
           <h2 className="text-5xl font-bold text-center mb-16">Filmography</h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {[
@@ -205,24 +220,26 @@ function App() {
             ].map((film, index) => (
               <div
                 key={index}
-                className="bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 overflow-hidden transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-2xl"
+                className="bg-white rounded-2xl border border-gray-200 overflow-hidden transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-2xl hover:bg-gray-50"
               >
-                <div className="h-72 bg-gradient-to-br from-white/20 to-white/10 flex items-center justify-center">
-                  <div className="text-2xl font-bold text-white text-center p-8">
+                <div className="h-72 bg-gradient-to-br from-gray-200 to-gray-100 flex items-center justify-center">
+                  <div className="text-2xl font-bold text-gray-800 text-center p-8">
                     {film.title}
                   </div>
                 </div>
                 <div className="p-8">
-                  <h3 className="text-2xl font-bold mb-2">
+                  <h3 className="text-2xl font-bold mb-2 text-gray-800">
                     {film.title} ({film.year})
                   </h3>
-                  <p className="mb-4 opacity-90">{film.director}</p>
-                  <p className="mb-6 leading-relaxed">{film.description}</p>
+                  <p className="mb-4 text-gray-600">{film.director}</p>
+                  <p className="mb-6 leading-relaxed text-gray-700">
+                    {film.description}
+                  </p>
                   <div className="space-y-2">
                     {film.awards.map((award, awardIndex) => (
                       <span
                         key={awardIndex}
-                        className="inline-block bg-white/20 px-4 py-2 rounded-full text-sm text-center"
+                        className="inline-block bg-gray-200 px-4 py-2 rounded-full text-sm text-center text-gray-700 hover:bg-gray-300 transition-colors"
                       >
                         {award}
                       </span>
