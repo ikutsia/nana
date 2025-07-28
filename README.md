@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# Nana Ekvtimishvili - Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Official portfolio website for Nana Ekvtimishvili, Georgian film director and writer.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Biography Section**: Detailed information about Nana's background and achievements
+- **Filmography**: Showcase of her films with awards and descriptions
+- **Literary Work**: Collection of her written works and publications
+- **Awards & Recognition**: Comprehensive list of international awards and honors
+- **Responsive Design**: Optimized for all devices and screen sizes
 
-### `npm start`
+## Technology Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React 19.1.0
+- CSS3 with modern gradients and animations
+- Netlify for hosting and deployment
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Local Development
 
-### `npm test`
+1. Install dependencies:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```bash
+   npm install
+   ```
 
-### `npm run build`
+2. Start development server:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   npm start
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Build for production:
+   ```bash
+   npm run build
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Deployment
 
-### `npm run eject`
+The site is deployed on Netlify at: https://nana-ekv.netlify.app
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Deployment Configuration
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Build Command**: `npm run build`
+- **Publish Directory**: `build`
+- **Node Version**: 18
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Files for Deployment
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- `netlify.toml` - Netlify configuration
+- `public/_redirects` - Client-side routing support
+- `public/index.html` - Main HTML template
 
-## Learn More
+## Content Security Policy
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The site includes a Content Security Policy that allows:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Script execution from same origin and inline scripts
+- Style loading from same origin and inline styles
+- Image loading from same origin, data URLs, and HTTPS sources
+- Font loading from same origin and data URLs
 
-### Code Splitting
+## Browser Support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
 
-### Analyzing the Bundle Size
+## Performance
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Optimized production build
+- Compressed assets
+- Modern CSS with hardware acceleration
+- Responsive images and layouts
 
-### Making a Progressive Web App
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+For website updates or technical issues, please contact the development team.
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+© 2024 Nana Ekvtimishvili. All rights reserved.
