@@ -443,16 +443,16 @@ function App() {
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="container grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
           <div className="flex justify-center lg:justify-start">
-            <div className="w-80 h-96 rounded-2xl overflow-hidden shadow-2xl border-2 border-white/30">
+            <div className="w-80 h-96 rounded-2xl overflow-hidden shadow-2xl border-2 border-white/30 transition-all duration-500 hover:transform hover:scale-105 hover:shadow-3xl hover:border-white/50 hover:rotate-1">
               <img
                 src="/images/nana-profile.jpg"
                 alt="Nana Ekvtimishvili"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover transition-all duration-500 hover:scale-110"
               />
             </div>
           </div>
           <div className="text-white text-center lg:text-left">
-            <h1 className="text-5xl lg:text-6xl font-bold mb-4 drop-shadow-lg">
+            <h1 className="text-5xl lg:text-6xl font-bold mb-4 drop-shadow-lg transition-all duration-300 hover:text-orange-400 hover:scale-105 hover:drop-shadow-2xl">
               {t.hero.title}
             </h1>
             <h2 className="text-2xl font-normal mb-8 opacity-90 italic">
@@ -474,7 +474,9 @@ function App() {
       {/* Bio Section */}
       <section id="bio" className="py-24 bg-white">
         <div className="container">
-          <h2 className="section-title">{t.bio.title}</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-primary-dark transition-all duration-300 hover:text-orange-400 hover:scale-105 hover:drop-shadow-lg">
+            {t.bio.title}
+          </h2>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 items-start">
             <div className="lg:col-span-2">
               {t.bio.content.map((paragraph, index) => (
@@ -514,7 +516,7 @@ function App() {
         ></div>
         <div className="absolute inset-0 bg-gray-100/20"></div>
         <div className="container relative z-10">
-          <h2 className="text-5xl font-bold text-center mb-16 text-white">
+          <h2 className="text-5xl font-bold text-center mb-16 text-white transition-all duration-300 hover:text-orange-400 hover:scale-105 hover:drop-shadow-lg">
             {t.filmography.title}
           </h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -556,7 +558,9 @@ function App() {
       {/* Literary Work Section */}
       <section id="literary" className="py-24 bg-white">
         <div className="container">
-          <h2 className="section-title">{t.literary.title}</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-primary-dark transition-all duration-300 hover:text-orange-400 hover:scale-105 hover:drop-shadow-lg">
+            {t.literary.title}
+          </h2>
           <div className="text-center max-w-4xl mx-auto mb-16">
             <p className="text-xl leading-relaxed text-primary">
               {t.literary.description}
@@ -591,12 +595,12 @@ function App() {
       {/* Awards Section */}
       <section id="awards" className="py-24 gradient-bg-dark text-white">
         <div className="container">
-          <h2 className="text-5xl font-bold text-center mb-16">
+          <h2 className="text-5xl font-bold text-center mb-16 text-white transition-all duration-300 hover:text-orange-400 hover:scale-105 hover:drop-shadow-lg">
             {t.awards.title}
           </h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             <div>
-              <h3 className="text-3xl font-bold mb-8 text-center">
+              <h3 className="text-3xl font-bold mb-8 text-center text-white transition-all duration-300 hover:text-orange-400 hover:scale-105 hover:drop-shadow-lg">
                 {t.awards.filmAwards.title}
               </h3>
               <div className="space-y-6">
@@ -617,7 +621,7 @@ function App() {
               </div>
             </div>
             <div>
-              <h3 className="text-3xl font-bold mb-8 text-center">
+              <h3 className="text-3xl font-bold mb-8 text-center text-white transition-all duration-300 hover:text-orange-400 hover:scale-105 hover:drop-shadow-lg">
                 {t.awards.literaryAwards.title}
               </h3>
               <div className="space-y-6">
