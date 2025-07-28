@@ -8,8 +8,8 @@
 body {
   font-family: "Georgia", "Times New Roman", serif;
   line-height: 1.6;
-  color: #2c3e50;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  color: #1a1a2e;
+  background: linear-gradient(135deg, #f8f9ff 0%, #e8f4fd 100%);
 }
 
 .App {
@@ -48,7 +48,7 @@ body {
 .nav-logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #2c3e50;
+  color: #1a1a2e;
   font-family: "Georgia", serif;
 }
 
@@ -67,7 +67,7 @@ body {
   background: none;
   border: none;
   font-size: 1rem;
-  color: #2c3e50;
+  color: #1a1a2e;
   cursor: pointer;
   padding: 0.5rem 1rem;
   border-radius: 25px;
@@ -78,7 +78,7 @@ body {
 
 .nav-link:hover,
 .nav-link.active {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #ff6b9d 0%, #c44569 100%);
   color: white;
   transform: translateY(-2px);
 }
@@ -88,7 +88,7 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
   position: relative;
   overflow: hidden;
 }
@@ -184,7 +184,7 @@ body {
 }
 
 .cta-button {
-  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+  background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
   color: white;
   border: none;
   padding: 1rem 2rem;
@@ -211,7 +211,7 @@ body {
   text-align: center;
   font-size: 3rem;
   margin-bottom: 4rem;
-  color: #2c3e50;
+  color: #1a1a2e;
   font-weight: bold;
 }
 
@@ -226,7 +226,7 @@ body {
   font-size: 1.1rem;
   margin-bottom: 2rem;
   line-height: 1.8;
-  color: #34495e;
+  color: #2c3e50;
 }
 
 .bio-stats {
@@ -238,7 +238,7 @@ body {
 .stat {
   text-align: center;
   padding: 2rem;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
   border-radius: 15px;
   color: white;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
@@ -258,7 +258,7 @@ body {
 /* Filmography Section */
 .filmography {
   padding: 100px 0;
-  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
 }
 
@@ -350,7 +350,7 @@ body {
   text-align: center;
   font-size: 3rem;
   margin-bottom: 4rem;
-  color: #2c3e50;
+  color: #1a1a2e;
   font-weight: bold;
 }
 
@@ -363,7 +363,7 @@ body {
 .literary-intro p {
   font-size: 1.2rem;
   line-height: 1.8;
-  color: #34495e;
+  color: #2c3e50;
 }
 
 .books-grid {
@@ -373,7 +373,7 @@ body {
 }
 
 .book-card {
-  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  background: linear-gradient(135deg, #f8f9ff 0%, #e8f4fd 100%);
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
@@ -387,7 +387,7 @@ body {
 
 .book-cover {
   height: 250px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -408,7 +408,7 @@ body {
 .book-info h3 {
   font-size: 1.4rem;
   margin-bottom: 0.5rem;
-  color: #2c3e50;
+  color: #1a1a2e;
   font-weight: bold;
 }
 
@@ -420,12 +420,12 @@ body {
 
 .book-info p {
   margin-bottom: 1rem;
-  color: #34495e;
+  color: #2c3e50;
   line-height: 1.6;
 }
 
 .book-awards span {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 20px;
@@ -436,7 +436,7 @@ body {
 /* Awards Section */
 .awards {
   padding: 100px 0;
-  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
   color: white;
 }
 
@@ -503,7 +503,7 @@ body {
 
 /* Footer */
 .footer {
-  background: #2c3e50;
+  background: #1a1a2e;
   color: white;
   padding: 60px 0 20px;
 }
