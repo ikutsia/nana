@@ -354,6 +354,182 @@ function App() {
         copyright: "© 2025 ნანა ექვთიმიშვილი. ყველა უფლება დაცულია.",
       },
     },
+    de: {
+      navigation: {
+        home: "Startseite",
+        bio: "Biografie",
+        filmography: "Filmografie",
+        literary: "Literarische Werke",
+        awards: "Auszeichnungen",
+      },
+      hero: {
+        title: "Nana Ekvtimishvili",
+        subtitle: "Filmregisseurin & Schriftstellerin",
+        description:
+          "Aus dem Herzen Georgiens erzählt sie Geschichten, die die menschliche Seele berühren",
+        button: "Entdecke ihre Geschichte",
+      },
+      bio: {
+        title: "Biografie",
+        content: [
+          "Nana Ekvtimishvili ist eine renommierte georgische Filmregisseurin und Schriftstellerin, bekannt für ihre tiefgründige Erzählkunst und einzigartige filmische Vision. In Georgien geboren und aufgewachsen, ist sie zu einer der gefeiertsten Stimmen im zeitgenössischen europäischen Kino geworden.",
+          "Ihr Werk zeichnet sich durch intime Darstellungen menschlicher Beziehungen aus, mit besonderem Fokus auf das Leben von Frauen und Kindern im postsowjetischen Georgien. Durch ihre Filme und literarischen Werke erforscht sie Themen der Identität, des Gedächtnisses und der Widerstandsfähigkeit des menschlichen Geistes.",
+          "Nanas künstlerische Reise begann mit ihrem Studium an der Shota Rustaveli Theater- und Filmuniversität in Tbilisi, wo sie ihren charakteristischen Erzählstil entwickelte. Ihre Filme wurden auf prestigeträchtigen internationalen Festivals gezeigt, darunter die Internationalen Filmfestspiele Berlin, das Filmfestival Cannes und die Internationalen Filmfestspiele von Venedig.",
+        ],
+        stats: [
+          { number: "15+", label: "Jahre im Film" },
+          { number: "8", label: "Spielfilme" },
+          { number: "12", label: "Literarische Werke" },
+          { number: "25+", label: "Internationale Auszeichnungen" },
+        ],
+      },
+      filmography: {
+        title: "Filmografie",
+        films: [
+          {
+            title: "In Bloom",
+            year: "2013",
+            director: "Co-Regie mit Simon Groß",
+            description:
+              "Eine Coming-of-Age-Geschichte, die in Tbilisi während des Bürgerkriegs der 1990er Jahre spielt.",
+            awards: [
+              "Berlinale - Kristallbär",
+              "Europäische Filmpreise - Entdeckung",
+            ],
+            image: "/images/pistol_girl.jpg",
+          },
+          {
+            title: "My Happy Family",
+            year: "2017",
+            director: "Co-Regie mit Simon Groß",
+            description:
+              "Ein kraftvolles Drama über eine Frau, die beschließt, ihr Familienhaus zu verlassen.",
+            awards: [
+              "Sundance Film Festival - World Cinema",
+              "Berlinale - Offizielle Auswahl",
+            ],
+            image: "/images/family.jpeg",
+          },
+          {
+            title: "Mother",
+            year: "2011",
+            director: "Regiedebüt",
+            description:
+              "Kurzfilm über das nie Erwachsenwerden trotz des Erwachsenseins.",
+            awards: [
+              "Filmfestspiele Venedig - Goldener Löwe Nominee",
+              "San Sebastián Film Festival - Bester Film",
+            ],
+          },
+          {
+            title: "Fata Morgana",
+            year: "2009",
+            director: "Drehbuchbeitrag",
+            description: "Eine Geschichte von Liebe, Kampf und Überleben.",
+            awards: ["Academy Awards - Bester fremdsprachiger Film Nominee"],
+          },
+        ],
+      },
+      literary: {
+        title: "Literarische Werke",
+        description:
+          "Neben ihren filmischen Erfolgen ist Nana Ekvtimishvili auch eine versierte Schriftstellerin, deren Werke in mehrere Sprachen übersetzt wurden. Ihre literarische Stimme spiegelt die gleichen Themen menschlicher Widerstandsfähigkeit und kultureller Identität wider, die ihre Filme definieren.",
+        books: [
+          {
+            title: "The Pear Field",
+            year: "2020",
+            description:
+              "Ein Roman über Kinder in einem staatlichen Waisenhaus in Tbilisi.",
+            award: "PEN Translation Prize",
+            image: "/images/pear.jpg",
+          },
+          {
+            title: "The Georgian Chronicles",
+            year: "2018",
+            description:
+              "Eine Sammlung von Kurzgeschichten, die das moderne georgische Leben erkunden.",
+            award: "Georgian Literary Prize",
+          },
+          {
+            title: "Voices of Tbilisi",
+            year: "2015",
+            description:
+              "Gedichtsammlung, die die Seele der georgischen Hauptstadt widerspiegelt.",
+            award: "European Poetry Prize",
+          },
+        ],
+      },
+      awards: {
+        title: "Auszeichnungen & Anerkennung",
+        filmAwards: {
+          title: "Filmauszeichnungen",
+          items: [
+            {
+              icon: "🏆",
+              title: "Goldener Bär Nominee",
+              description:
+                "Internationale Filmfestspiele Berlin - Mother (2011)",
+            },
+            {
+              icon: "🎬",
+              title: "Kristallbär Auszeichnung",
+              description:
+                "Internationale Filmfestspiele Berlin - In Bloom (2013)",
+            },
+            {
+              icon: "⭐",
+              title: "Europäische Filmpreise",
+              description: "Entdeckungspreis - In Bloom (2013)",
+            },
+            {
+              icon: "🎭",
+              title: "San Sebastián Goldene Muschel",
+              description: "Bester Film - Mother (2011)",
+            },
+          ],
+        },
+        literaryAwards: {
+          title: "Literarische Auszeichnungen",
+          items: [
+            {
+              icon: "📚",
+              title: "PEN Translation Prize",
+              description: "The Pear Field (2020)",
+            },
+            {
+              icon: "✍️",
+              title: "Georgian Literary Prize",
+              description: "The Georgian Chronicles (2018)",
+            },
+            {
+              icon: "🌍",
+              title: "European Poetry Prize",
+              description: "Voices of Tbilisi (2015)",
+            },
+            {
+              icon: "🏛️",
+              title: "Orden der Ehre",
+              description: "Regierung Georgiens (2019)",
+            },
+          ],
+        },
+      },
+      footer: {
+        subtitle: "Filmregisseurin & Schriftstellerin",
+        tagline: "Von Georgien in die Welt",
+        contact: {
+          title: "Kontakt",
+          subtitle: "Für Anfragen und Zusammenarbeit",
+          description: "Vertreten durch internationale Agenturen",
+        },
+        follow: {
+          title: "Folgen",
+          subtitle: "Internationale Filmfestivals",
+          description: "Literarische Veranstaltungen & Lesungen",
+        },
+        copyright: "© 2025 Nana Ekvtimishvili. Alle Rechte vorbehalten.",
+      },
+    },
   };
 
   const t = translations[language];
@@ -426,20 +602,28 @@ function App() {
               ))}
             </ul>
             <button
-              onClick={() => setLanguage(language === "en" ? "ka" : "en")}
+              onClick={() => {
+                if (language === "en") setLanguage("ka");
+                else if (language === "ka") setLanguage("de");
+                else setLanguage("en");
+              }}
               className="px-4 py-2 bg-gradient-to-r from-accent-blue to-accent-blue-dark text-white rounded-full font-serif transition-all duration-300 hover:transform hover:-translate-y-0.5"
             >
-              {language === "en" ? "ქართ" : "EN"}
+              {language === "en" ? "ქართ" : language === "ka" ? "DE" : "EN"}
             </button>
           </div>
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center gap-4">
             <button
-              onClick={() => setLanguage(language === "en" ? "ka" : "en")}
+              onClick={() => {
+                if (language === "en") setLanguage("ka");
+                else if (language === "ka") setLanguage("de");
+                else setLanguage("en");
+              }}
               className="px-3 py-1.5 bg-gradient-to-r from-accent-blue to-accent-blue-dark text-white rounded-full font-serif text-sm transition-all duration-300 hover:transform hover:-translate-y-0.5"
             >
-              {language === "en" ? "ქართ" : "EN"}
+              {language === "en" ? "ქართ" : language === "ka" ? "DE" : "EN"}
             </button>
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
