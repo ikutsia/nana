@@ -61,21 +61,20 @@ function App() {
             ],
           },
           {
-            title: "Beginning",
-            year: "2020",
-            director: "Co-directed with Simon Groß",
-            description:
-              "A psychological thriller exploring religious extremism in Georgia.",
+            title: "Mother",
+            year: "2011",
+            director: "Directing debut",
+            description: "Short film about never growing up despite adulthood.",
             awards: [
               "Venice Film Festival - Golden Lion Nominee",
               "San Sebastián Film Festival - Best Film",
             ],
           },
           {
-            title: "Tangerines",
-            year: "2013",
+            title: "Fata Morgana",
+            year: "2009",
             director: "Screenplay contribution",
-            description: "A story of humanity during the Abkhazian war.",
+            description: "A story of love, struggle and survival.",
             awards: ["Academy Awards - Best Foreign Language Film Nominee"],
           },
         ],
@@ -116,8 +115,7 @@ function App() {
             {
               icon: "🏆",
               title: "Golden Bear Nominee",
-              description:
-                "Berlin International Film Festival - Beginning (2020)",
+              description: "Berlin International Film Festival - Mother (2011)",
             },
             {
               icon: "🎬",
@@ -133,7 +131,7 @@ function App() {
             {
               icon: "🎭",
               title: "San Sebastián Golden Shell",
-              description: "Best Film - Beginning (2020)",
+              description: "Best Film - Mother (2011)",
             },
           ],
         },
@@ -234,21 +232,21 @@ function App() {
             ],
           },
           {
-            title: "დასაწყისი",
-            year: "2020",
-            director: "სიმონ გროსთან ერთად",
+            title: "დედა",
+            year: "2011",
+            director: "სარეჟისორო დებიუტი",
             description:
-              "ფსიქოლოგიური თრილერი, რომელიც იკვლევს რელიგიურ ექსტრემიზმს საქართველოში.",
+              "მოკლე ფილმი ზრდასრულობის მიუხედავად არ გაზრდის შესახებ.",
             awards: [
               "ვენეციის კინოფესტივალი - ოქროს ლომის ნომინაცია",
               "სან-სებასტიანის კინოფესტივალი - საუკეთესო ფილმი",
             ],
           },
           {
-            title: "მანდარინები",
-            year: "2013",
-            director: "სცენარის წვლილი",
-            description: "ადამიანობის ისტორია აფხაზეთის ომის დროს.",
+            title: "ფატა მორგანა",
+            year: "2009",
+            director: "სცენარში შეტანილი წვლილი",
+            description: "სიყვარულის, ბრძოლისა და გადარჩენის ისტორია.",
             awards: ["ოსკარის ჯილდო - საუკეთესო უცხოური ფილმის ნომინაცია"],
           },
         ],
@@ -288,8 +286,7 @@ function App() {
             {
               icon: "🏆",
               title: "ოქროს დათვის ნომინაცია",
-              description:
-                "ბერლინის საერთაშორისო კინოფესტივალი - დასაწყისი (2020)",
+              description: "ბერლინის საერთაშორისო კინოფესტივალი - დედა (2011)",
             },
             {
               icon: "🎬",
@@ -305,7 +302,7 @@ function App() {
             {
               icon: "🎭",
               title: "სან-სებასტიანის ოქროს ნიჟარა",
-              description: "საუკეთესო ფილმი - დასაწყისი (2020)",
+              description: "საუკეთესო ფილმი - დედა (2011)",
             },
           ],
         },
