@@ -601,30 +601,60 @@ function App() {
                 </li>
               ))}
             </ul>
-            <button
-              onClick={() => {
-                if (language === "en") setLanguage("ka");
-                else if (language === "ka") setLanguage("de");
-                else setLanguage("en");
-              }}
-              className="px-4 py-2 bg-gradient-to-r from-accent-blue to-accent-blue-dark text-white rounded-full font-serif transition-all duration-300 hover:transform hover:-translate-y-0.5"
-            >
-              {language === "en" ? "ქართ" : language === "ka" ? "DE" : "EN"}
-            </button>
+            <div className="flex items-center gap-2">
+              {language !== "ka" && (
+                <button
+                  onClick={() => setLanguage("ka")}
+                  className="px-3 py-1.5 bg-gradient-to-r from-accent-blue to-accent-blue-dark text-white rounded-full font-serif text-sm transition-all duration-300 hover:transform hover:-translate-y-0.5"
+                >
+                  ქართ
+                </button>
+              )}
+              {language !== "de" && (
+                <button
+                  onClick={() => setLanguage("de")}
+                  className="px-3 py-1.5 bg-gradient-to-r from-accent-blue to-accent-blue-dark text-white rounded-full font-serif text-sm transition-all duration-300 hover:transform hover:-translate-y-0.5"
+                >
+                  DE
+                </button>
+              )}
+              {language !== "en" && (
+                <button
+                  onClick={() => setLanguage("en")}
+                  className="px-3 py-1.5 bg-gradient-to-r from-accent-blue to-accent-blue-dark text-white rounded-full font-serif text-sm transition-all duration-300 hover:transform hover:-translate-y-0.5"
+                >
+                  EN
+                </button>
+              )}
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center gap-4">
-            <button
-              onClick={() => {
-                if (language === "en") setLanguage("ka");
-                else if (language === "ka") setLanguage("de");
-                else setLanguage("en");
-              }}
-              className="px-3 py-1.5 bg-gradient-to-r from-accent-blue to-accent-blue-dark text-white rounded-full font-serif text-sm transition-all duration-300 hover:transform hover:-translate-y-0.5"
-            >
-              {language === "en" ? "ქართ" : language === "ka" ? "DE" : "EN"}
-            </button>
+          <div className="md:hidden flex items-center gap-2">
+            {language !== "ka" && (
+              <button
+                onClick={() => setLanguage("ka")}
+                className="px-3 py-1.5 bg-gradient-to-r from-accent-blue to-accent-blue-dark text-white rounded-full font-serif text-sm transition-all duration-300 hover:transform hover:-translate-y-0.5"
+              >
+                ქართ
+              </button>
+            )}
+            {language !== "de" && (
+              <button
+                onClick={() => setLanguage("de")}
+                className="px-3 py-1.5 bg-gradient-to-r from-accent-blue to-accent-blue-dark text-white rounded-full font-serif text-sm transition-all duration-300 hover:transform hover:-translate-y-0.5"
+              >
+                DE
+              </button>
+            )}
+            {language !== "en" && (
+              <button
+                onClick={() => setLanguage("en")}
+                className="px-3 py-1.5 bg-gradient-to-r from-accent-blue to-accent-blue-dark text-white rounded-full font-serif text-sm transition-all duration-300 hover:transform hover:-translate-y-0.5"
+              >
+                EN
+              </button>
+            )}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="p-2 text-primary-dark hover:text-accent-pink transition-colors"
