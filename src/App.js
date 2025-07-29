@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 function App() {
   const [activeSection, setActiveSection] = useState("home");
   const [language, setLanguage] = useState("en");
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const translations = {
     en: {
@@ -393,10 +394,12 @@ function App() {
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/20 backdrop-blur-md z-50 shadow-lg transition-all duration-300">
         <div className="container flex justify-between items-center h-16">
-          <div className="text-2xl font-bold text-primary-dark font-serif">
+          <div className="text-xl md:text-2xl font-bold text-primary-dark font-serif">
             Nana Ekvtimishvili
           </div>
-          <div className="flex items-center gap-8">
+
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center gap-8">
             <ul className="flex gap-8">
               {[
                 { id: "home", label: t.navigation.home },
@@ -426,13 +429,74 @@ function App() {
               {language === "en" ? "ქართ" : "EN"}
             </button>
           </div>
+
+          {/* Mobile Menu Button */}
+          <div className="md:hidden flex items-center gap-4">
+            <button
+              onClick={() => setLanguage(language === "en" ? "ka" : "en")}
+              className="px-3 py-1.5 bg-gradient-to-r from-accent-blue to-accent-blue-dark text-white rounded-full font-serif text-sm transition-all duration-300 hover:transform hover:-translate-y-0.5"
+            >
+              {language === "en" ? "ქართ" : "EN"}
+            </button>
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="p-2 text-primary-dark hover:text-accent-pink transition-colors"
+            >
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
+
+        {/* Mobile Menu */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden bg-white/95 backdrop-blur-md border-t border-white/20">
+            <div className="container py-4">
+              <ul className="space-y-2">
+                {[
+                  { id: "home", label: t.navigation.home },
+                  { id: "bio", label: t.navigation.bio },
+                  { id: "filmography", label: t.navigation.filmography },
+                  { id: "literary", label: t.navigation.literary },
+                  { id: "awards", label: t.navigation.awards },
+                ].map((item) => (
+                  <li key={item.id}>
+                    <button
+                      className={`w-full text-left px-4 py-3 rounded-lg transition-all duration-300 font-serif ${
+                        activeSection === item.id
+                          ? "bg-gradient-to-r from-accent-pink to-accent-pink-dark text-white"
+                          : "text-primary-dark hover:bg-gradient-to-r hover:from-accent-pink hover:to-accent-pink-dark hover:text-white"
+                      }`}
+                      onClick={() => {
+                        scrollToSection(item.id);
+                        setIsMobileMenuOpen(false);
+                      }}
+                    >
+                      {item.label}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        )}
       </nav>
 
       {/* Hero Section */}
       <section
         id="home"
-        className="min-h-screen flex items-center relative overflow-hidden"
+        className="min-h-screen flex items-center relative overflow-hidden pt-16"
       >
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat blur-sm"
@@ -441,9 +505,9 @@ function App() {
           }}
         ></div>
         <div className="absolute inset-0 bg-black/50"></div>
-        <div className="container grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
-          <div className="flex justify-center lg:justify-start">
-            <div className="w-80 h-96 rounded-2xl overflow-hidden shadow-2xl border-2 border-white/30 transition-all duration-500 hover:transform hover:scale-105 hover:shadow-3xl hover:border-white/50 hover:rotate-1">
+        <div className="container grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center relative z-10 py-8">
+          <div className="flex justify-center lg:justify-start order-2 lg:order-1">
+            <div className="w-64 h-80 md:w-80 md:h-96 rounded-2xl overflow-hidden shadow-2xl border-2 border-white/30 transition-all duration-500 hover:transform hover:scale-105 hover:shadow-3xl hover:border-white/50 hover:rotate-1">
               <img
                 src="/images/nana-profile.jpg"
                 alt="Nana Ekvtimishvili"
@@ -451,18 +515,18 @@ function App() {
               />
             </div>
           </div>
-          <div className="text-white text-center lg:text-left">
-            <h1 className="text-5xl lg:text-6xl font-bold mb-4 drop-shadow-lg transition-all duration-300 hover:text-orange-400 hover:scale-105 hover:drop-shadow-2xl">
+          <div className="text-white text-center lg:text-left order-1 lg:order-2">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-3 md:mb-4 drop-shadow-lg transition-all duration-300 hover:text-orange-400 hover:scale-105 hover:drop-shadow-2xl">
               {t.hero.title}
             </h1>
-            <h2 className="text-2xl font-normal mb-8 opacity-90 italic">
+            <h2 className="text-lg sm:text-xl md:text-2xl font-normal mb-4 md:mb-8 opacity-90 italic">
               {t.hero.subtitle}
             </h2>
-            <p className="text-xl mb-12 opacity-80 leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl mb-8 md:mb-12 opacity-80 leading-relaxed max-w-lg mx-auto lg:mx-0">
               {t.hero.description}
             </p>
             <button
-              className="btn-primary"
+              className="btn-primary text-sm sm:text-base px-6 sm:px-8 py-3 sm:py-4"
               onClick={() => scrollToSection("bio")}
             >
               {t.hero.button}
