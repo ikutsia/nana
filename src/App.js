@@ -63,7 +63,7 @@ function App() {
             image: "/images/family.jpeg",
           },
           {
-            title: "Mother",
+            title: "Waiting For Mum",
             year: "2011",
             director: "Directing debut",
             description: "Short film about never growing up despite adulthood.",
@@ -91,7 +91,7 @@ function App() {
             year: "2020",
             description:
               "A novel about children in a state-run orphanage in Tbilisi.",
-            award: "PEN Translation Prize",
+            award: "Georgian Literary Prize",
             image: "/images/pear.jpg",
           },
           {
@@ -99,7 +99,7 @@ function App() {
             year: "2018",
             description:
               "A collection of short stories exploring modern Georgian life.",
-            award: "Georgian Literary Prize",
+            award: "PEN Translation Prize",
           },
           {
             title: "Voices of Tbilisi",
@@ -118,7 +118,8 @@ function App() {
             {
               icon: "🏆",
               title: "Golden Bear Nominee",
-              description: "Berlin International Film Festival - Mother (2011)",
+              description:
+                "Berlin International Film Festival - Waiting For Mum (2011)",
             },
             {
               icon: "🎬",
@@ -134,7 +135,7 @@ function App() {
             {
               icon: "🎭",
               title: "San Sebastián Golden Shell",
-              description: "Best Film - Mother (2011)",
+              description: "Best Film - Waiting For Mum (2011)",
             },
           ],
         },
@@ -265,7 +266,7 @@ function App() {
             title: "მსხლების მინდორი",
             year: "2020",
             description: "რომანი ბავშვებზე სახელმწიფო ბავშვთა სახლში თბილისში.",
-            award: "PEN-ის თარგმნის ჯილდო",
+            award: "ქართული ლიტერატურული ჯილდო",
             image: "/images/pear.jpg",
           },
           {
@@ -273,7 +274,7 @@ function App() {
             year: "2018",
             description:
               "მოკლე მოთხრობების კრებული თანამედროვე ქართული ცხოვრების შესწავლით.",
-            award: "ქართული ლიტერატურული ჯილდო",
+            award: "PEN-ის თარგმნის ჯილდო",
           },
           {
             title: "თბილისის ხმები",
@@ -387,7 +388,7 @@ function App() {
         title: "Filmografie",
         films: [
           {
-            title: "In Bloom",
+            title: "Die Langen Hellen Tagen",
             year: "2013",
             director: "Co-Regie mit Simon Groß",
             description:
@@ -399,7 +400,7 @@ function App() {
             image: "/images/pistol_girl.jpg",
           },
           {
-            title: "My Happy Family",
+            title: "Meine Glückliche Familie",
             year: "2017",
             director: "Co-Regie mit Simon Groß",
             description:
@@ -411,7 +412,7 @@ function App() {
             image: "/images/family.jpeg",
           },
           {
-            title: "Mother",
+            title: "Warten Auf Mama",
             year: "2011",
             director: "Regiedebüt",
             description:
@@ -436,11 +437,11 @@ function App() {
           "Neben ihren filmischen Erfolgen ist Nana Ekvtimishvili auch eine versierte Schriftstellerin, deren Werke in mehrere Sprachen übersetzt wurden. Ihre literarische Stimme spiegelt die gleichen Themen menschlicher Widerstandsfähigkeit und kultureller Identität wider, die ihre Filme definieren.",
         books: [
           {
-            title: "The Pear Field",
+            title: "Das Birnenfeld",
             year: "2020",
             description:
               "Ein Roman über Kinder in einem staatlichen Waisenhaus in Tbilisi.",
-            award: "PEN Translation Prize",
+            award: "Georgian Literary Prize",
             image: "/images/pear.jpg",
           },
           {
@@ -448,7 +449,7 @@ function App() {
             year: "2018",
             description:
               "Eine Sammlung von Kurzgeschichten, die das moderne georgische Leben erkunden.",
-            award: "Georgian Literary Prize",
+            award: "PEN Translation Prize",
           },
           {
             title: "Voices of Tbilisi",
@@ -468,23 +469,23 @@ function App() {
               icon: "🏆",
               title: "Goldener Bär Nominee",
               description:
-                "Internationale Filmfestspiele Berlin - Mother (2011)",
+                "Internationale Filmfestspiele Berlin - Waiting For Mum (2011)",
             },
             {
               icon: "🎬",
               title: "Kristallbär Auszeichnung",
               description:
-                "Internationale Filmfestspiele Berlin - In Bloom (2013)",
+                "Internationale Filmfestspiele Berlin - Die Langen Hellen Tagen (2013)",
             },
             {
               icon: "⭐",
               title: "Europäische Filmpreise",
-              description: "Entdeckungspreis - In Bloom (2013)",
+              description: "Entdeckungspreis - Die Langen Hellen Tagen (2013)",
             },
             {
               icon: "🎭",
               title: "San Sebastián Goldene Muschel",
-              description: "Bester Film - Mother (2011)",
+              description: "Bester Film - Waiting For Mum (2011)",
             },
           ],
         },
