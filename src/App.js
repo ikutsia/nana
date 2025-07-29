@@ -557,10 +557,14 @@ function App() {
               {t.bio.stats.map((stat, index) => (
                 <div
                   key={index}
-                  className="text-center p-8 bg-gradient-to-br from-accent-blue to-accent-blue-dark rounded-2xl text-white shadow-lg"
+                  className="text-center p-8 bg-gradient-to-br from-accent-blue to-accent-blue-dark rounded-2xl text-white shadow-lg transition-all duration-300 hover:transform hover:scale-110 hover:-translate-y-2 hover:shadow-2xl hover:from-accent-blue-dark hover:to-accent-blue cursor-pointer group"
                 >
-                  <h3 className="text-4xl font-bold mb-2">{stat.number}</h3>
-                  <p className="text-sm opacity-90">{stat.label}</p>
+                  <h3 className="text-4xl font-bold mb-2 transition-all duration-300 group-hover:scale-110 group-hover:text-yellow-200">
+                    {stat.number}
+                  </h3>
+                  <p className="text-sm opacity-90 transition-all duration-300 group-hover:opacity-100 group-hover:text-white">
+                    {stat.label}
+                  </p>
                 </div>
               ))}
             </div>
