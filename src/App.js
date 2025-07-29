@@ -48,6 +48,7 @@ function App() {
               "Berlin Film Festival - Crystal Bear",
               "European Film Awards - Discovery",
             ],
+            image: "/images/pistol_girl.jpg",
           },
           {
             title: "My Happy Family",
@@ -59,6 +60,7 @@ function App() {
               "Sundance Film Festival - World Cinema",
               "Berlin Film Festival - Official Selection",
             ],
+            image: "/images/family.jpeg",
           },
           {
             title: "Mother",
@@ -90,6 +92,7 @@ function App() {
             description:
               "A novel about children in a state-run orphanage in Tbilisi.",
             award: "PEN Translation Prize",
+            image: "/images/pear.jpg",
           },
           {
             title: "The Georgian Chronicles",
@@ -496,9 +499,9 @@ function App() {
         className="min-h-screen flex items-center relative overflow-hidden pt-16"
       >
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat blur-sm"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: "url('/images/Nana-by-Irma-Sharikadzeweb2.jpg')",
+            backgroundImage: "url('/images/girls.jpg')",
           }}
         ></div>
         <div className="absolute inset-0 bg-black/50"></div>
@@ -587,9 +590,24 @@ function App() {
                 className="bg-white rounded-2xl border border-gray-200 overflow-hidden transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-2xl hover:bg-gray-50"
               >
                 <div className="h-72 bg-gradient-to-br from-gray-200 to-gray-100 flex items-center justify-center">
-                  <div className="text-2xl font-bold text-gray-800 text-center p-8">
-                    {film.title}
-                  </div>
+                  {film.image ? (
+                    <div className="w-full h-full relative">
+                      <img
+                        src={film.image}
+                        alt={film.title}
+                        className="w-full h-full object-cover"
+                      />
+                      <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
+                        <div className="text-2xl font-bold text-white text-center p-8 drop-shadow-lg">
+                          {film.title}
+                        </div>
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="text-2xl font-bold text-gray-800 text-center p-8">
+                      {film.title}
+                    </div>
+                  )}
                 </div>
                 <div className="p-8">
                   <h3 className="text-2xl font-bold mb-2 text-gray-800">
@@ -631,9 +649,24 @@ function App() {
             {t.literary.books.map((book, index) => (
               <div key={index} className="card">
                 <div className="h-64 bg-gradient-to-br from-accent-red to-accent-red-dark flex items-center justify-center">
-                  <div className="text-xl font-bold text-white text-center p-8">
-                    {book.title}
-                  </div>
+                  {book.image ? (
+                    <div className="w-full h-full relative">
+                      <img
+                        src={book.image}
+                        alt={book.title}
+                        className="w-full h-full object-cover"
+                      />
+                      <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
+                        <div className="text-xl font-bold text-white text-center p-8 drop-shadow-lg">
+                          {book.title}
+                        </div>
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="text-xl font-bold text-white text-center p-8">
+                      {book.title}
+                    </div>
+                  )}
                 </div>
                 <div className="p-8">
                   <h3 className="text-2xl font-bold mb-2 text-primary-dark">
