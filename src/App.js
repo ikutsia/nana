@@ -413,7 +413,7 @@ function App() {
                     className={`px-4 py-2 rounded-full transition-all duration-300 font-serif ${
                       activeSection === item.id
                         ? "bg-gradient-to-r from-accent-pink to-accent-pink-dark text-white transform -translate-y-0.5"
-                        : "text-primary-dark hover:bg-gradient-to-r hover:from-accent-pink hover:to-accent-pink-dark hover:text-white hover:transform hover:-translate-y-0.5"
+                        : "text-white hover:bg-gradient-to-r hover:from-accent-pink hover:to-accent-pink-dark hover:text-white hover:transform hover:-translate-y-0.5"
                     }`}
                     onClick={() => scrollToSection(item.id)}
                   >
@@ -476,7 +476,7 @@ function App() {
                       className={`w-full text-left px-4 py-3 rounded-lg transition-all duration-300 font-serif ${
                         activeSection === item.id
                           ? "bg-gradient-to-r from-accent-pink to-accent-pink-dark text-white"
-                          : "text-primary-dark hover:bg-gradient-to-r hover:from-accent-pink hover:to-accent-pink-dark hover:text-white"
+                          : "text-white hover:bg-gradient-to-r hover:from-accent-pink hover:to-accent-pink-dark hover:text-white"
                       }`}
                       onClick={() => {
                         scrollToSection(item.id);
