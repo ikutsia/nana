@@ -694,7 +694,7 @@ function App() {
                       className={`w-full text-left px-4 py-3 rounded-lg transition-all duration-300 font-serif ${
                         activeSection === item.id
                           ? "bg-gradient-to-r from-accent-pink to-accent-pink-dark text-white"
-                          : "text-white hover:bg-gradient-to-r hover:from-accent-pink hover:to-accent-pink-dark hover:text-white"
+                          : "text-black hover:bg-gradient-to-r hover:from-accent-pink hover:to-accent-pink-dark hover:text-white"
                       }`}
                       onClick={() => {
                         scrollToSection(item.id);
@@ -912,7 +912,7 @@ function App() {
       {/* Awards Section */}
       <section id="awards" className="py-24 gradient-bg-dark text-white">
         <div className="container">
-          <h2 className="text-5xl font-bold text-center mb-16 text-white transition-all duration-300 hover:text-orange-400 hover:scale-105 hover:drop-shadow-lg">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-16 text-white transition-all duration-300 hover:text-orange-400 hover:scale-105 hover:drop-shadow-lg">
             {t.awards.title}
           </h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
