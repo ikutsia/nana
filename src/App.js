@@ -499,9 +499,10 @@ function App() {
         className="min-h-screen flex items-center relative overflow-hidden pt-16"
       >
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          className="absolute inset-0 bg-cover bg-no-repeat"
           style={{
             backgroundImage: "url('/images/girls.jpg')",
+            backgroundPosition: "65% center",
           }}
         ></div>
         <div className="absolute inset-0 bg-black/50"></div>
